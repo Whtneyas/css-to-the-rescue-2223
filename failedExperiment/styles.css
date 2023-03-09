@@ -1,0 +1,163 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: radial-gradient(circle at center, rgb(37, 37, 143) 10%, black 50%);
+}
+
+
+:root {
+    --background-color: #0e173f;
+    --text-color: white;
+    --border-raduis-circle: 50%;
+}
+
+/**********STERREN*******/
+
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+
+
+article:nth-of-type(2) {
+    display: relative;
+    margin-top:20%;
+    margin-left: 40%;
+    margin-bottom: 50%;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    transform: scale(0.8);
+    /* animation: loading 15s linear infinite; */
+   
+}
+
+
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    display: none;
+
+
+}
+
+
+article:nth-of-type(2) section {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--text-color);
+    border-radius: var(--border-raduis-circle);
+
+
+}
+
+
+
+
+/******MANEN*******/
+
+/****New moon **/
+article:nth-of-type(2) section:nth-of-type(1) {
+    /* position: relative; */
+    transform: translatex(10em);
+    border-radius:50%;
+    background-image: 
+   linear-gradient(90deg, black 30%, grey); 
+  
+
+
+}
+
+/**Full moon**/
+article:nth-of-type(2) section:nth-of-type(2) {
+
+    transform: translatex(-10em);
+
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at right bottom, black, transparent 70%),
+        linear-gradient(90deg, black , white)
+}
+
+
+/**Third quarter **/
+article:nth-of-type(2) section:nth-of-type(3) {
+    transform: translateY(10em);
+    border-radius: 50%;
+    background-image:
+    linear-gradient(-90deg, white, black 60%);
+
+    
+    
+
+}
+
+/*First quartet**/
+article:nth-of-type(2) section:nth-of-type(4) {
+    transform: translateY(-10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at left bottom, black 30%, transparent 80%),
+        linear-gradient(90deg, black , white)
+
+}
+
+/**Waxing cresent moon *****/
+article:nth-of-type(2) section:nth-of-type(5) {
+    transform: rotate(45deg)translateY(-10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at left bottom, black 30%, transparent 80%),
+        linear-gradient(90deg, black , white)
+}
+
+/***Waning cresent*/
+article:nth-of-type(2) section:nth-of-type(6) {
+    transform: rotate(-45deg)translateY(10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at right bottom, black 30%, transparent 70%),
+        linear-gradient(90deg, white , black)
+    
+    
+
+
+}
+/** Waning gibbous***/
+article:nth-of-type(2) section:nth-of-type(7) {
+    transform: rotate(45deg)translateY(10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at left bottom, white 30%, transparent 70%),
+        linear-gradient(90deg,black , black)
+    
+}
+/****Waxing gibbous**/
+article:nth-of-type(2) section:nth-of-type(8) {
+    transform: rotate(-45deg)translateY(-10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at right bottom, white 30%, transparent 70%),
+        linear-gradient(90deg,black, black)
+}
+
+
+
+@keyframes loading {
+    0%{
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+   

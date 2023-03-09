@@ -29,9 +29,11 @@ ul{
     justify-content: center;
     list-style: none;
     gap:4em;
-    
+   
     
 }
+
+
 
 li {
     text-align: center;
@@ -76,8 +78,6 @@ li:nth-of-type(2) {
 li:nth-of-type(3) {
     border: 3px solid cornflowerblue;
     color:cornflowerblue
-
-    
 }
 
 li:last-of-type {

@@ -1,0 +1,610 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(150deg, rgba(0, 183, 255, 0.897), black, black 80%);
+    color: white;
+    background-color: black;
+    font-family: 'Tilt Prism', cursive;
+}
+
+
+:root {
+    --basic-color-white: white;
+}
+
+/***THE STARS**/
+article:nth-of-type(1) {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/***TITLE OF THE START ***/
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    text-decoration:overline;
+    text-shadow: 10px 3px 3px blue;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2em; */
+    position: relative;
+    list-style-type: none;
+    margin:0;
+    padding:1em;
+
+}
+
+article:nth-of-type(1) li {
+    position: relative;
+    width: calc(100% / 80);
+    aspect-ratio:1;
+    /* background-color: white; */
+    border-radius: 50%;
+
+    filter:
+        drop-shadow( 0 0 5px rgba(135, 207, 235, 0.973))
+        drop-shadow(  0 0 10px blue)
+        drop-shadow(  0 0 15px skyblue);
+
+    animation: animate 15s linear infinite;
+
+    background-image: 
+    radial-gradient(
+        var(--clr, white) 20%,
+        transparent 21%
+    );
+}
+
+article:nth-of-type(1) li:nth-of-type(2n) {
+    --clr:aqua;
+    animation: animate 20s linear infinite;
+   
+}
+
+
+article:nth-of-type(1)  li:nth-of-type(3n) {
+    animation: animate 25s linear infinite;
+
+}
+
+article:nth-of-type(1) li:nth-of-type(4n) {
+    animation: animate 30s linear infinite;
+    --clr:yellow;
+}
+
+
+article:nth-of-type(1) li:nth-of-type(5n) {
+    animation: animate 35s linear infinite;
+}
+
+article:nth-of-type(1)li:nth-of-type(6n) {
+    animation: animate 40s linear infinite;
+    --clr:yellow;
+}
+
+
+article:nth-of-type(1)  li:nth-of-type(7n) {
+    animation: animate 45s linear infinite;
+}
+
+article:nth-of-type(1)  li:nth-of-type(8n) {
+    animation: animate 50s linear infinite;
+}
+
+article:nth-of-type(1)  li:nth-of-type(9n) {
+    --clr:aqua;
+    animation: animate 17s linear infinite;
+   
+}
+
+
+article:nth-of-type(1) li:nth-of-type(10n) {
+    animation: animate 22s linear infinite;
+
+
+}
+
+
+article:nth-of-type(1) li:nth-last-of-type(2n) {
+    animation-delay:-7s;
+  
+}
+
+article:nth-of-type(1)  li:nth-last-of-type(3n) {
+    animation-delay:-11s;
+
+}
+
+article:nth-of-type(1) li:nth-last-of-type(4n) {
+    animation-delay:-13s;
+}
+
+
+article:nth-of-type(1) li:nth-last-of-type(5n) {
+    animation-delay:-17s;
+}
+
+article:nth-of-type(1)  li:nth-last-of-type(6n) {
+    animation-delay:-19s;
+}
+
+
+article:nth-of-type(1)  li:nth-last-of-type(7n) {
+    animation-delay:-23s;
+}
+
+article:nth-of-type(1) li:nth-last-of-type(8n) {
+    animation-delay:-29s;
+}
+
+article:nth-of-type(1) li:nth-last-of-type(9n) {
+    animation-delay:-31s;
+}
+
+
+article:nth-of-type(1) li:nth-last-of-type(10n) {
+    animation-delay:-37s;
+
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(-10vh) scale(0.5);
+    }
+
+
+    100% {
+        transform: translateY(100vh) scale(1.5);
+    }
+
+
+}
+
+
+
+@keyframes animaate-blink {
+    0% {
+        transform:scale(0);
+    }
+    100%{
+        transform:scale ();   
+    }
+   
+
+}
+
+figure {
+    display: none;
+}
+
+
+article:nth-of-type(2) {
+    position: relative;
+    margin-top: 20%;
+    bottom: 35em;
+    margin-left: 40%;
+    border-radius: 50%;
+    transform: scale(0.8);
+
+
+}
+
+/** Container for de moon**/
+div:nth-of-type(1) {
+    background-color: green;
+    width: 2%;
+    height: 2%;
+    animation: loading 15s linear infinite;
+    animation-play-state: paused;
+
+}
+
+/**Play animation**/
+body:has(#play-animation:checked) div:nth-of-type(1) {
+    animation-play-state: running;
+}
+
+
+
+h2 {
+    font-size: 1rem;
+    margin-left: 4em;
+    text-align: center;
+    margin-top: 5em;
+    flex-direction: row;
+    display: none;
+    font-size: 0.5rem;
+ 
+}
+
+
+article:nth-of-type(2) section {
+    display: grid;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--text-color);
+    /* border-radius: var(--border-raduis-circle);
+       box-shadow: 0px 0px 10px white; */
+
+}
+
+
+article:nth-of-type(2) section:hover {
+     box-shadow: 0px 0px 10px white;
+     transform: scale(4);
+     z-index: 1;
+     transition: 3s;
+     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+
+/******MANEN*******/
+
+/****New moon **/
+article:nth-of-type(2) section:nth-of-type(1) {
+    /* position: relative; */
+    transform: translatex(10em);
+    border-radius: 50%;
+    background-image:
+        linear-gradient(90deg, black 30%, grey);
+
+}
+
+
+article:nth-of-type(2) section:nth-of-type(1):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+body
+:has(#new-moon:checked) section:nth-of-type(1){
+    transform: scale(4.5);
+    z-index: 3;
+    transition: 2s;
+    box-shadow: 0px 0px 10px white;
+
+}
+
+
+body
+:has(#new-moon:checked) section:nth-of-type(1) h2  {
+    display:flex
+}
+
+
+
+
+
+/**Full moon**/
+article:nth-of-type(2) section:nth-of-type(2) {
+
+    transform: translatex(-10em);
+
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at right bottom, black, transparent 70%),
+        linear-gradient(90deg, black, white)
+}
+
+
+body
+:has(#fullmoon:checked) section:nth-of-type(2){
+    transform: scale(4.5)rotate(360deg);
+    z-index: 3;
+    transition: 2s;
+    box-shadow: 0px 0px 10px white;
+    
+}
+
+body
+:has(#fullmoon:checked) section:nth-of-type(2) h2  {
+    display:flex
+}
+
+
+article:nth-of-type(2) section:nth-of-type(2):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+/**Third quarter **/
+article:nth-of-type(2) section:nth-of-type(3) {
+    transform: translateY(10em);
+    border-radius: 50%;
+    background-image:
+        linear-gradient(-90deg, white, black 60%);
+
+}
+
+
+article:nth-of-type(2) section:nth-of-type(3):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+          
+
+
+/**Filter third quarter**/
+body
+:has(#third-quarter:checked) section:nth-of-type(3){
+    transform: scale(4.5);
+    z-index: 3;
+    transition: 2s;
+    box-shadow: 0px 0px 10px white;
+    
+}
+
+
+
+
+body
+:has(#third-quarter:checked) section:nth-of-type(3) h2  {
+    display:flex
+}
+
+/*First quartet**/
+article:nth-of-type(2) section:nth-of-type(4) {
+    transform: translateY(-10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at left bottom, black 30%, transparent 80%),
+        linear-gradient(90deg, black, white)
+}
+
+
+
+article:nth-of-type(2) section:nth-of-type(4):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+body
+:has(#first-quarter:checked) section:nth-of-type(4){
+    transform: scale(4.5);
+    z-index: 3;
+    transition: 2s;
+    box-shadow: 0px 0px 10px white;
+    
+}
+
+
+
+body
+:has(#first-quarter:checked) section:nth-of-type(4) h2  {
+    display:flex
+}
+
+/**Waxing cresent moon *****/
+article:nth-of-type(2) section:nth-of-type(5) {
+    transform: rotate(45deg)translateY(-10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at left bottom, black 30%, transparent 80%),
+        linear-gradient(90deg, black, white)
+}
+
+
+article:nth-of-type(2) section:nth-of-type(5):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+body
+:has(#waxing-cresent:checked) section:nth-of-type(5){
+    transform: scale(4.5);
+    z-index: 3;
+    transition: 2s;
+    box-shadow: 0px 0px 10px white;
+    
+}
+
+
+
+body
+:has(#waxing-cresent:checked) section:nth-of-type(5) h2  {
+    display:flex
+}
+
+
+/***Waning cresent*/
+article:nth-of-type(2) section:nth-of-type(6) {
+    transform: rotate(-45deg)translateY(10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at right bottom, black 30%, transparent 70%),
+        linear-gradient(90deg, white, black )
+}
+
+
+article:nth-of-type(2) section:nth-of-type(6):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+body
+:has(#Waning-cresent:checked) section:nth-of-type(6){
+    transform: scale(4.5);
+    z-index: 3;
+    transition: 3s;
+    box-shadow: 0px 0px 10px white;
+    
+}
+
+
+body
+:has(#waning-cresent:checked) section:nth-of-type(6) h2  {
+    display:flex
+}
+
+
+
+/** Waning gibbous***/
+article:nth-of-type(2) section:nth-of-type(7) {
+    transform: rotate(45deg)translateY(10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at left bottom, white 30%, transparent 70%),
+        linear-gradient(90deg, black, black)
+}
+
+
+article:nth-of-type(2) section:nth-of-type(7):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+body
+:has(#waning-gibbous:checked) section:nth-of-type(7){
+    transform: scale(4.5);
+    z-index: 3;
+    transition: 2s;
+    box-shadow: 0px 0px 10px white;
+    
+}
+
+
+
+body
+:has(#waning-gibbous:checked) section:nth-of-type(7) h2  {
+    display:flex
+}
+/****Waxing gibbous**/
+article:nth-of-type(2) section:nth-of-type(8) {
+    transform: rotate(-45deg)translateY(-10em);
+    border-radius: 50%;
+    background-image:
+        radial-gradient(circle at right bottom, white 30%, transparent 70%),
+        linear-gradient(90deg, black, black)
+}
+
+
+article:nth-of-type(2) section:nth-of-type(8):hover {
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+body
+:has(#waxing-gibbous:checked) section:nth-of-type(8){
+    transform: scale(4.5);
+    z-index: 3;
+    transition: 2s;
+    box-shadow: 0px 0px 10px white;
+    
+}
+
+
+body
+:has(#waxing-gibbous:checked) section:nth-of-type(8) h2  {
+    display:flex
+}
+
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+aside {
+    position: relative;
+    bottom: 12em;
+    right: -4em;
+}
+
+form {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+    
+
+
+}
+
+form label {
+    font-size: 1.5rem;
+    padding: .5em;
+    padding: 1em;
+    border: 1px solid blue;
+    border-radius: 1em;
+    background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.212) 50%, black);
+
+}
+
+form input {
+    height: 25px;
+    width: 25px;
+
+
+
+}
+
+form label:nth-child(odd) {
+    position: relative;
+    right: 35em;
+}
+
+
+
+form label:nth-child(even) {
+    position: relative;
+    right: 5em;
+}
+
+form label:last-of-type {
+    position:relative;
+    top: 1em;
+    right: 10em;
+    width: 5em;
+}
+
+form label:hover {
+    background-color: blue;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
