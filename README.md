@@ -2,9 +2,22 @@
 
 This is an interactive application  made in html and Css. 
 
-<img width="889" alt="image" src="https://user-images.githubusercontent.com/90154152/224174569-df7f06b2-aca4-4e8d-8491-80180b5dbc9f.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/90154152/224174569-df7f06b2-aca4-4e8d-8491-80180b5dbc9f.png">
 
-## IDEAS and iNSPIRATIONS 
+
+## Table of content 
+   * [Ideas and inspirations](#ideas-and-inspirations)
+   * [Process](#process)
+   * [Challanges](#challenges)
+   * [Failures](#failures)
+   * [Lessons](#lessons-learnt)
+   * [Wishlist](#what-i-wanted-to-add-to-my-application)
+   * [Resources](#resources)
+   
+   ***
+
+
+## Ideas and inspirations.
  I started this project by looking for inspirations since i had no idea of what i wanted to do or how to start with this project. I then got an idea to 
  do something with the moon and skies. I started searching for examples of the nice illustrations of the skies. 
  
@@ -12,11 +25,14 @@ This is an interactive application  made in html and Css.
  
  Moon and stars 
  
- ![image](https://user-images.githubusercontent.com/90154152/224176766-5ecf1c09-48c1-4eb7-b534-037fb15bd1a3.png)
+ <img width="441" alt="image" src= "https://user-images.githubusercontent.com/90154152/224176766-5ecf1c09-48c1-4eb7-b534-037fb15bd1a3.png">
+ 
+
  
  Fases of the moon
  
- ![image](https://user-images.githubusercontent.com/90154152/224176791-a089226a-38fb-42b4-bd85-43504779c31a.png)
+ <img width="441" alt="image" src= "https://user-images.githubusercontent.com/90154152/224176791-a089226a-38fb-42b4-bd85-43504779c31a.png">
+ 
  
  
  ![image](https://user-images.githubusercontent.com/90154152/224176913-e28eb745-44c7-433b-b1b1-b01470e201b5.png)
@@ -34,7 +50,7 @@ This is an interactive application  made in html and Css.
  I made a few notes about it which you can find [here](https://github.com/Whtneyas/css-to-the-rescue-2223/wiki/Gradients)
  
  
- I began experimenting what i learned during the workshop on my project. It took a lot of trials to get the gradients right. I had to cobine the radial and linear gradients to get what i wanted. 
+ I began experimenting what i learned during the workshop on my project. It took a lot of trials to get the gradients right. I had to combine the radial and linear gradients to get what i wanted. 
  
  
  <img width="382" alt="image" src="https://user-images.githubusercontent.com/90154152/224178305-f1309f4a-d470-4d75-9ba6-91a39990dc5c.png">
@@ -43,14 +59,14 @@ This is an interactive application  made in html and Css.
  
  ### Checkboxes 
  
- I am actually grateful for following the worshop on filter. I wanted to make  be able to filter the fases of the moon uses checkboxes. With 
+ I am actually grateful for following the worshop on filter. I wanted to be  be able to filter the fases of the moon uses checkboxes. With 
  what i learned during the workshop i apply filter to my project using checkboxes and the has selector
  
  ### :has()
  
  **What does the has selector do?**
  
- The "has" selector in CSS is used to select elements that have a specific descendant element or set of descendant elements. It allows you to style elements   based on the presence of other elements within them. Iknow i could do so much with the has selector but there wasn;t much time on my side so in decided to    keep it simple 
+ The "has" selector in CSS is used to select elements that have a specific descendant element or set of descendant elements. It allows you to style elements   based on the presence of other elements within them. I know i could do so much with the has selector but there wasn;t much time on my side so I  decided to    keep it simple 
  
  **How have i benefitted from the :has()**
  
@@ -75,7 +91,7 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
 
 
  
- 
+  ***
  
  
  ### Challenges 
@@ -92,7 +108,7 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
  
  - Changed the figure tag to list items 
  
- I changes the figure element to list items and realised it started working perfectly as i wanted it to. I made a list of items in the ul and styled it individually using the nth-of-type selector. But i realised it was so difficult to style each item because i had over 100 stars i neeed to style. 
+ I changeD the figure element to list items and realised it started working perfectly as i wanted it to. I made a list of items in the ul and styled it individually using the nth-of-type selector. But i realised it was so difficult to style each item because i had over 100 stars i neeed to style. 
  
  
  - Progress Interview 
@@ -102,7 +118,8 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
  
  <img width="350" alt="image" src="https://user-images.githubusercontent.com/90154152/224182032-a7ae2cea-de9c-421f-b9ba-eff6f4318124.png">
  
- 
+  ***
+  
  ### Failures.
  
  - Position of stars
@@ -115,8 +132,8 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
    I wanted to make the  moon move in a circular motion. I watched a few tutorial on how to make this circulation motion work. I tried animating the             container so that it will automatically affect the moon but it didn't totally as planned. It did circulate but not in the way i wanted.
    
  
- 
-### Lessons learned 
+  ***
+### Lessons learnt
 
 - How to animate using keyframes 
 - The has () selector 
@@ -126,12 +143,15 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
 - Css selectors 
 - Styling of checkboxes 
 
-
+ ***
+ 
 ### What i wanted to add to my application 
 
 - Wanted to style the checkboxes 
-- Wanted to make the moon 
+- Description of the moon in the middle of the moon when the radio buttons  are been clicked.
+- Wanted to do more with the backgroud. I was very indecisive whether to make it all black. 
 
+ ***
 
 ### Resources 
 
