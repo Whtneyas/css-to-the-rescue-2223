@@ -2,8 +2,6 @@ body{
 
     color:black;
     background-color: black;  
-    
-   
 }
 
 h1{
@@ -12,8 +10,6 @@ h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: underline;
     color: white;
-   
-    
 
 }
 
@@ -43,7 +39,6 @@ li {
     padding: 20px;
     font-size: 3rem;
     border-radius:10px;
-    background-color: ;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
     
@@ -59,9 +54,6 @@ li:hover {
     color:black;
 }
 
-li::after {
-    /* content:"🦄" */
-}
 li:first-of-type {
     border: 3px solid pink;
     color: pink;
@@ -105,5 +97,3 @@ body:has(li:last-of-type){
 }
 
 
-
-  

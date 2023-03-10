@@ -10,7 +10,7 @@ body {
     font-family: 'Tilt Prism', cursive;
 }
 
-
+/*** Color properties**/
 :root {
     --basic-color-white: white;
 }
@@ -28,7 +28,7 @@ h1 {
     font-size: 2rem;
     text-align: center;
     color: white;
-    text-decoration:overline;
+    text-decoration: overline;
     text-shadow: 10px 3px 3px blue;
 
 }
@@ -36,50 +36,49 @@ h1 {
 ul {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 2em; */
     position: relative;
     list-style-type: none;
-    margin:0;
-    padding:1em;
+    margin: 0;
+    padding: 1em;
 
 }
+
 
 article:nth-of-type(1) li {
     position: relative;
     width: calc(100% / 80);
-    aspect-ratio:1;
-    /* background-color: white; */
+    aspect-ratio: 1;
     border-radius: 50%;
 
     filter:
-        drop-shadow( 0 0 5px rgba(135, 207, 235, 0.973))
-        drop-shadow(  0 0 10px blue)
-        drop-shadow(  0 0 15px skyblue);
+        drop-shadow(0 0 5px rgba(135, 207, 235, 0.973))
+        drop-shadow(0 0 10px blue) 
+        drop-shadow(0 0 15px skyblue);
 
     animation: animate 15s linear infinite;
 
-    background-image: 
-    radial-gradient(
-        var(--clr, white) 20%,
-        transparent 21%
-    );
+    background-image:
+        radial-gradient(var(--clr, white) 20%,
+            transparent 21%);
 }
 
+/** Sterren**/
 article:nth-of-type(1) li:nth-of-type(2n) {
-    --clr:aqua;
+    --clr: aqua;
     animation: animate 20s linear infinite;
-   
+
 }
 
 
-article:nth-of-type(1)  li:nth-of-type(3n) {
+article:nth-of-type(1) li:nth-of-type(3n) {
     animation: animate 25s linear infinite;
 
 }
 
+
 article:nth-of-type(1) li:nth-of-type(4n) {
     animation: animate 30s linear infinite;
-    --clr:yellow;
+    --clr: yellow;
 }
 
 
@@ -87,78 +86,81 @@ article:nth-of-type(1) li:nth-of-type(5n) {
     animation: animate 35s linear infinite;
 }
 
+
 article:nth-of-type(1)li:nth-of-type(6n) {
     animation: animate 40s linear infinite;
-    --clr:yellow;
+    --clr: yellow;
 }
 
 
-article:nth-of-type(1)  li:nth-of-type(7n) {
+article:nth-of-type(1) li:nth-of-type(7n) {
     animation: animate 45s linear infinite;
 }
 
-article:nth-of-type(1)  li:nth-of-type(8n) {
+
+article:nth-of-type(1) li:nth-of-type(8n) {
     animation: animate 50s linear infinite;
 }
 
-article:nth-of-type(1)  li:nth-of-type(9n) {
-    --clr:aqua;
+
+article:nth-of-type(1) li:nth-of-type(9n) {
+    --clr: aqua;
     animation: animate 17s linear infinite;
-   
 }
 
 
 article:nth-of-type(1) li:nth-of-type(10n) {
     animation: animate 22s linear infinite;
-
-
 }
 
 
 article:nth-of-type(1) li:nth-last-of-type(2n) {
-    animation-delay:-7s;
-  
-}
-
-article:nth-of-type(1)  li:nth-last-of-type(3n) {
-    animation-delay:-11s;
+    animation-delay: -7s;
 
 }
+
+article:nth-of-type(1) li:nth-last-of-type(3n) {
+    animation-delay: -11s;
+
+}
+
 
 article:nth-of-type(1) li:nth-last-of-type(4n) {
-    animation-delay:-13s;
+    animation-delay: -13s;
 }
 
 
 article:nth-of-type(1) li:nth-last-of-type(5n) {
-    animation-delay:-17s;
-}
-
-article:nth-of-type(1)  li:nth-last-of-type(6n) {
-    animation-delay:-19s;
+    animation-delay: -17s;
 }
 
 
-article:nth-of-type(1)  li:nth-last-of-type(7n) {
-    animation-delay:-23s;
+article:nth-of-type(1) li:nth-last-of-type(6n) {
+    animation-delay: -19s;
+}
+
+
+article:nth-of-type(1) li:nth-last-of-type(7n) {
+    animation-delay: -23s;
 }
 
 article:nth-of-type(1) li:nth-last-of-type(8n) {
-    animation-delay:-29s;
+    animation-delay: -29s;
 }
 
+
 article:nth-of-type(1) li:nth-last-of-type(9n) {
-    animation-delay:-31s;
+    animation-delay: -31s;
 }
 
 
 article:nth-of-type(1) li:nth-last-of-type(10n) {
-    animation-delay:-37s;
+    animation-delay: -37s;
 
 }
 
 
-
+/***Moves stars from up and down***/
 @keyframes animate {
     0% {
         transform: translateY(-10vh) scale(0.5);
@@ -171,25 +173,7 @@ article:nth-of-type(1) li:nth-last-of-type(10n) {
 
 
 }
-
-
-
-@keyframes animaate-blink {
-    0% {
-        transform:scale(0);
-    }
-    100%{
-        transform:scale ();   
-    }
-   
-
-}
-
-figure {
-    display: none;
-}
-
-
+/*8Section**/
 article:nth-of-type(2) {
     position: relative;
     margin-top: 20%;
@@ -199,7 +183,7 @@ article:nth-of-type(2) {
     transform: scale(0.8);
 
 
-}
+} 
 
 /** Container for de moon**/
 div:nth-of-type(1) {
@@ -216,7 +200,7 @@ body:has(#play-animation:checked) div:nth-of-type(1) {
     animation-play-state: running;
 }
 
-
+/** Title of the fases***/
 
 h2 {
     font-size: 1rem;
@@ -226,7 +210,7 @@ h2 {
     flex-direction: row;
     display: none;
     font-size: 0.5rem;
- 
+
 }
 
 
@@ -236,24 +220,21 @@ article:nth-of-type(2) section {
     width: 100px;
     height: 100px;
     background-color: var(--text-color);
-    /* border-radius: var(--border-raduis-circle);
-       box-shadow: 0px 0px 10px white; */
 
 }
 
-
+/** Hover voor sections*/
 article:nth-of-type(2) section:hover {
-     box-shadow: 0px 0px 10px white;
-     transform: scale(4);
-     z-index: 1;
-     transition: 3s;
-     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0px 0px 10px white;
+    transform: scale(4);
+    z-index: 1;
+    transition: 3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
 
-
-/******MANEN*******/
+/******Fases of the Mon/
 
 /****New moon **/
 article:nth-of-type(2) section:nth-of-type(1) {
@@ -265,7 +246,7 @@ article:nth-of-type(2) section:nth-of-type(1) {
 
 }
 
-
+/***Hover State**/
 article:nth-of-type(2) section:nth-of-type(1):hover {
     transform: scale(4);
     z-index: 1;
@@ -275,8 +256,7 @@ article:nth-of-type(2) section:nth-of-type(1):hover {
 
 
 
-body
-:has(#new-moon:checked) section:nth-of-type(1){
+body:has(#new-moon:checked) section:nth-of-type(1) {
     transform: scale(4.5);
     z-index: 3;
     transition: 2s;
@@ -285,9 +265,8 @@ body
 }
 
 
-body
-:has(#new-moon:checked) section:nth-of-type(1) h2  {
-    display:flex
+body:has(#new-moon:checked) section:nth-of-type(1) h2 {
+    display: flex
 }
 
 
@@ -306,20 +285,19 @@ article:nth-of-type(2) section:nth-of-type(2) {
 }
 
 
-body
-:has(#fullmoon:checked) section:nth-of-type(2){
+body:has(#fullmoon:checked) section:nth-of-type(2) {
     transform: scale(4.5)rotate(360deg);
     z-index: 3;
     transition: 2s;
     box-shadow: 0px 0px 10px white;
-    
+
 }
 
-body
-:has(#fullmoon:checked) section:nth-of-type(2) h2  {
-    display:flex
+body:has(#fullmoon:checked) section:nth-of-type(2) h2 {
+    display: flex
 }
 
+/***Hover State**/
 
 article:nth-of-type(2) section:nth-of-type(2):hover {
     transform: scale(4);
@@ -338,35 +316,33 @@ article:nth-of-type(2) section:nth-of-type(3) {
 
 }
 
-
+/***Hover State**/
 article:nth-of-type(2) section:nth-of-type(3):hover {
     transform: scale(4);
     z-index: 1;
     transition: 3s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-          
+
 
 
 /**Filter third quarter**/
-body
-:has(#third-quarter:checked) section:nth-of-type(3){
+body:has(#third-quarter:checked) section:nth-of-type(3) {
     transform: scale(4.5);
     z-index: 3;
     transition: 2s;
     box-shadow: 0px 0px 10px white;
-    
+
 }
 
 
 
 
-body
-:has(#third-quarter:checked) section:nth-of-type(3) h2  {
-    display:flex
+body:has(#third-quarter:checked) section:nth-of-type(3) h2 {
+    display: flex
 }
 
-/*First quartet**/
+/*First quarter**/
 article:nth-of-type(2) section:nth-of-type(4) {
     transform: translateY(-10em);
     border-radius: 50%;
@@ -376,7 +352,7 @@ article:nth-of-type(2) section:nth-of-type(4) {
 }
 
 
-
+/***Hover State**/
 article:nth-of-type(2) section:nth-of-type(4):hover {
     transform: scale(4);
     z-index: 1;
@@ -385,20 +361,18 @@ article:nth-of-type(2) section:nth-of-type(4):hover {
 }
 
 
-body
-:has(#first-quarter:checked) section:nth-of-type(4){
+body:has(#first-quarter:checked) section:nth-of-type(4) {
     transform: scale(4.5);
     z-index: 3;
     transition: 2s;
     box-shadow: 0px 0px 10px white;
-    
+
 }
 
 
 
-body
-:has(#first-quarter:checked) section:nth-of-type(4) h2  {
-    display:flex
+body:has(#first-quarter:checked) section:nth-of-type(4) h2 {
+    display: flex
 }
 
 /**Waxing cresent moon *****/
@@ -410,7 +384,7 @@ article:nth-of-type(2) section:nth-of-type(5) {
         linear-gradient(90deg, black, white)
 }
 
-
+/***Hover State**/
 article:nth-of-type(2) section:nth-of-type(5):hover {
     transform: scale(4);
     z-index: 1;
@@ -420,20 +394,18 @@ article:nth-of-type(2) section:nth-of-type(5):hover {
 
 
 
-body
-:has(#waxing-cresent:checked) section:nth-of-type(5){
+body:has(#waxing-cresent:checked) section:nth-of-type(5) {
     transform: scale(4.5);
     z-index: 3;
     transition: 2s;
     box-shadow: 0px 0px 10px white;
-    
+
 }
 
 
 
-body
-:has(#waxing-cresent:checked) section:nth-of-type(5) h2  {
-    display:flex
+body:has(#waxing-cresent:checked) section:nth-of-type(5) h2 {
+    display: flex
 }
 
 
@@ -443,10 +415,10 @@ article:nth-of-type(2) section:nth-of-type(6) {
     border-radius: 50%;
     background-image:
         radial-gradient(circle at right bottom, black 30%, transparent 70%),
-        linear-gradient(90deg, white, black )
+        linear-gradient(90deg, white, black)
 }
 
-
+/***Hover State**/
 article:nth-of-type(2) section:nth-of-type(6):hover {
     transform: scale(4);
     z-index: 1;
@@ -455,19 +427,17 @@ article:nth-of-type(2) section:nth-of-type(6):hover {
 }
 
 
-body
-:has(#Waning-cresent:checked) section:nth-of-type(6){
+body:has(#Waning-cresent:checked) section:nth-of-type(6) {
     transform: scale(4.5);
     z-index: 3;
     transition: 3s;
     box-shadow: 0px 0px 10px white;
-    
+
 }
 
 
-body
-:has(#waning-cresent:checked) section:nth-of-type(6) h2  {
-    display:flex
+body:has(#Waning-cresent:checked) section:nth-of-type(6) h2 {
+    display: flex
 }
 
 
@@ -481,7 +451,7 @@ article:nth-of-type(2) section:nth-of-type(7) {
         linear-gradient(90deg, black, black)
 }
 
-
+/***Hover State**/
 article:nth-of-type(2) section:nth-of-type(7):hover {
     transform: scale(4);
     z-index: 1;
@@ -490,21 +460,20 @@ article:nth-of-type(2) section:nth-of-type(7):hover {
 }
 
 
-body
-:has(#waning-gibbous:checked) section:nth-of-type(7){
+body:has(#waning-gibbous:checked) section:nth-of-type(7) {
     transform: scale(4.5);
     z-index: 3;
     transition: 2s;
     box-shadow: 0px 0px 10px white;
-    
+
 }
 
 
-
-body
-:has(#waning-gibbous:checked) section:nth-of-type(7) h2  {
-    display:flex
+body:has(#waning-gibbous:checked) section:nth-of-type(7) h2 {
+    display: flex
 }
+
+
 /****Waxing gibbous**/
 article:nth-of-type(2) section:nth-of-type(8) {
     transform: rotate(-45deg)translateY(-10em);
@@ -514,7 +483,7 @@ article:nth-of-type(2) section:nth-of-type(8) {
         linear-gradient(90deg, black, black)
 }
 
-
+/***Hover State**/
 article:nth-of-type(2) section:nth-of-type(8):hover {
     transform: scale(4);
     z-index: 1;
@@ -523,22 +492,20 @@ article:nth-of-type(2) section:nth-of-type(8):hover {
 }
 
 
-body
-:has(#waxing-gibbous:checked) section:nth-of-type(8){
+body:has(#waxing-gibbous:checked) section:nth-of-type(8) {
     transform: scale(4.5);
     z-index: 3;
     transition: 2s;
     box-shadow: 0px 0px 10px white;
-    
+
 }
 
 
-body
-:has(#waxing-gibbous:checked) section:nth-of-type(8) h2  {
-    display:flex
+body:has(#waxing-gibbous:checked) section:nth-of-type(8) h2 {
+    display: flex
 }
 
-
+/** Circlulating the moon**/
 @keyframes loading {
     0% {
         transform: rotate(0deg);
@@ -548,6 +515,9 @@ body
         transform: rotate(-360deg);
     }
 }
+
+
+/** Form**/
 
 aside {
     position: relative;
@@ -560,7 +530,7 @@ form {
     gap: 2em;
     grid-template-columns: 1fr 1fr;
     float: right;
-    
+
 
 
 }
@@ -579,9 +549,9 @@ form input {
     height: 25px;
     width: 25px;
 
-
-
 }
+
+/**Every odd button will go to the right**/
 
 form label:nth-child(odd) {
     position: relative;
@@ -589,14 +559,15 @@ form label:nth-child(odd) {
 }
 
 
-
+/**Every even  button will go to the left**/
 form label:nth-child(even) {
     position: relative;
     right: 5em;
 }
 
+/** Pause button **/
 form label:last-of-type {
-    position:relative;
+    position: relative;
     top: 1em;
     right: 10em;
     width: 5em;
@@ -607,4 +578,3 @@ form label:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-
