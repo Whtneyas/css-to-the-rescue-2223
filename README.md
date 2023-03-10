@@ -4,13 +4,14 @@ This is an interactive application  made in html and Css.
 
 <img width="889" alt="image" src="https://user-images.githubusercontent.com/90154152/224174569-df7f06b2-aca4-4e8d-8491-80180b5dbc9f.png">
 
-## IDEAS and iNSPIRATIONS 
+## Ideas and inspirations
+
  I started this project by looking for inspirations since i had no idea of what i wanted to do or how to start with this project. I then got an idea to 
  do something with the moon and skies. I started searching for examples of the nice illustrations of the skies. 
  
  These are what i found: 
  
- Moon and stars 
+- Moon and stars 
  
  ![image](https://user-images.githubusercontent.com/90154152/224176766-5ecf1c09-48c1-4eb7-b534-037fb15bd1a3.png)
  
@@ -110,8 +111,9 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
  
  
  
- 
- 
+Make the moon fases circulate. 
+
+I want the fases of the moon to circulate perfectly  but it didn't work out. I tried but 
  
  
  
