@@ -4,14 +4,13 @@ This is an interactive application  made in html and Css.
 
 <img width="889" alt="image" src="https://user-images.githubusercontent.com/90154152/224174569-df7f06b2-aca4-4e8d-8491-80180b5dbc9f.png">
 
-## Ideas and inspirations
-
+## IDEAS and iNSPIRATIONS 
  I started this project by looking for inspirations since i had no idea of what i wanted to do or how to start with this project. I then got an idea to 
  do something with the moon and skies. I started searching for examples of the nice illustrations of the skies. 
  
  These are what i found: 
  
-- Moon and stars 
+ Moon and stars 
  
  ![image](https://user-images.githubusercontent.com/90154152/224176766-5ecf1c09-48c1-4eb7-b534-037fb15bd1a3.png)
  
@@ -104,17 +103,17 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
  <img width="350" alt="image" src="https://user-images.githubusercontent.com/90154152/224182032-a7ae2cea-de9c-421f-b9ba-eff6f4318124.png">
  
  
- Failures.
- Position of stars
+ ### Failures.
  
- I wanted the stars to be randomly be positioned and then have this blinking effect but that couldn't work out. So i found a new method. I decided to amke the stars move from up and down and give the stars a differen animation delay so that it will look randomly. 
+ - Position of stars
+ 
+ I wanted the stars to be randomly be positioned and then have this blinking effect but that couldn't work out. So i found a new method. I decided to make  the stars move from up and down and give the stars a different animation delay so that it will look randomly.
  
  
- 
-Make the moon fases circulate. 
-
-I want the fases of the moon to circulate perfectly  but it didn't work out. I tried but 
- 
+ - Circulating of the moon fases 
+   
+   I wanted to make the  moon move in a circular motion. I watched a few tutorial on how to make this circulation motion work. I tried animating the             container so that it will automatically affect the moon but it didn't totally as planned. It did circulate but not in the way i wanted.
+   
  
  
 ### Lessons learned 
@@ -128,10 +127,28 @@ I want the fases of the moon to circulate perfectly  but it didn't work out. I t
 - Styling of checkboxes 
 
 
-What i wanted to add to my application 
+### What i wanted to add to my application 
 
 - Wanted to style the checkboxes 
 - Wanted to make the moon 
+
+
+### Resources 
+
+- https://css-tricks.com/
+- Workshop - Gradients 
+- Workshop - Random 
+- Workshop - Has()
+- Workshop - Kleuren
+- Workshop - Interactie
+- https://www.bing.com/search?q=stack+overflow&cvid=3d42846d09d94f13877ea371d405f754&aqs=edge.0.46j69i57j0l3j46j0l3.2881j0j1&pglt=43&FORM=ANNTA1&PC=HCTS
+- https://www.w3schools.com/Js/
+- Workshop - Svg filter .
+
+
+
+
+
 
 
 
