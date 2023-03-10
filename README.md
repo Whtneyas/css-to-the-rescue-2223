@@ -33,11 +33,9 @@ This is an interactive application  made in html and Css.
  
  <img width="441" alt="image" src= "https://user-images.githubusercontent.com/90154152/224176791-a089226a-38fb-42b4-bd85-43504779c31a.png">
  
+ <img width="441" alt="image" src= "https://user-images.githubusercontent.com/90154152/224176913-e28eb745-44c7-433b-b1b1-b01470e201b5.png">
  
- 
- ![image](https://user-images.githubusercontent.com/90154152/224176913-e28eb745-44c7-433b-b1b1-b01470e201b5.png)
- 
- ![image](https://user-images.githubusercontent.com/90154152/224177094-ebb8d8bd-b9f3-4ee7-9289-17f29bc3a855.png)?
+ <img width="441" alt="image" src= "https://user-images.githubusercontent.com/90154152/224177094-ebb8d8bd-b9f3-4ee7-9289-17f29bc3a855.png">
  
  
  ## Process
@@ -82,7 +80,7 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
 
 ### This is with checkboxes 
 
-<img width="827" alt="image" src="https://user-images.githubusercontent.com/90154152/223774373-a670a7c9-0e79-494b-9a14-a13fef2b896d.png">
+<img width="441" alt="image" src="https://user-images.githubusercontent.com/90154152/223774373-a670a7c9-0e79-494b-9a14-a13fef2b896d.png">
 
 
 ### And this is the code  the html code i used. 
@@ -101,7 +99,9 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
 
  I really had difficulties in making  the stars. I tried so many methods. I started by using the figure tag in html to make the stars but i realised ure with the figure tag i couldn't style it without having a text in the figure element. I spent so much time trying to figure out why it wasn't working .
  
- ![image](https://user-images.githubusercontent.com/90154152/224181403-538d4fa7-a90d-4fe6-bd81-65a0bfc023ea.png)
+
+ 
+ <img width="441" alt="image" src="https://user-images.githubusercontent.com/90154152/224181403-538d4fa7-a90d-4fe6-bd81-65a0bfc023ea.png">
  
  
  
@@ -116,7 +116,7 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
  After the progress interview with my lecturer Vasilis . He advised me to attend a workshop he is going to give called "Random". I guess you might be wondering what random is. But in this project Vasilis showed us how you can randomly style elements which i needed for making my stars. The work shop was a week ahead so i focused on making the fases of the moon.
  
  
- <img width="350" alt="image" src="https://user-images.githubusercontent.com/90154152/224182032-a7ae2cea-de9c-421f-b9ba-eff6f4318124.png">
+ <img width="441" alt="image" src="https://user-images.githubusercontent.com/90154152/224182032-a7ae2cea-de9c-421f-b9ba-eff6f4318124.png">
  
   ***
   
