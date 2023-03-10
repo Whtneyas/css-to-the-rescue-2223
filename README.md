@@ -12,6 +12,7 @@ This is an interactive application  made in html and Css.
    * [Failures](#failures)
    * [Lessons](#lessons-learnt)
    * [Wishlist](#what-i-wanted-to-add-to-my-application)
+   * [Reflection](#reflection)
    * [Resources](#resources)
    
    ***
@@ -42,9 +43,10 @@ This is an interactive application  made in html and Css.
  
  Experimenting 
  
- I started with experimenting with gradient in codepen. In order to make the different fases of the moon i had to use gradients to make this possible.
- Lucky for me in the second week i followed a workshop on gradients and was able to learn a few things about how gradients work. 
- 
+ Initially, I began my project by experimenting with gradients in Codepen. Given that I needed to create the different phases of the moon, I realized that using gradients would be crucial in achieving this goal. Fortunately, in the second week of the project, I participated in a workshop that focused on gradients. This workshop was particularly beneficial as it provided me with a deeper understanding of how gradients work and helped me to refine my techniques.
+
+
+
  I made a few notes about it which you can find [here](https://github.com/Whtneyas/css-to-the-rescue-2223/wiki/Gradients)
  
  
@@ -57,19 +59,16 @@ This is an interactive application  made in html and Css.
  
  ### Checkboxes 
  
- I am actually grateful for following the worshop on filter. I wanted to be  be able to filter the fases of the moon uses checkboxes. With 
- what i learned during the workshop i apply filter to my project using checkboxes and the has selector
- 
- ### :has()
- 
- **What does the has selector do?**
- 
- The "has" selector in CSS is used to select elements that have a specific descendant element or set of descendant elements. It allows you to style elements   based on the presence of other elements within them. I know i could do so much with the has selector but there wasn;t much time on my side so I  decided to    keep it simple 
- 
- **How have i benefitted from the :has()**
- 
- - With the has selector i could filter my moon fases by using forms
- - With the has selector i could show the name of the fase of the moon when the checbox is been clicked.
+ I am genuinely appreciative of attending the workshop on filters. My primary objective was to implement a filtering functionality in my project using checkboxes to enable users to filter the moon phases. The knowledge and skills I acquired from the workshop proved to be invaluable as I was able to apply what I learned to my project using the "has" selector.
+
+As you may already know, the "has" selector in CSS is used to select elements that have a specific descendant element or set of descendant elements. This selector is incredibly useful as it allows you to style elements based on the presence of other elements within them. Although I recognize that there are numerous ways to utilize the "has" selector, due to time constraints, I chose to keep it simple.
+
+In terms of how I benefited from using the "has" selector, I was able to achieve the following:
+
+-I successfully implemented a filtering functionality that enabled users to filter the moon phases using forms.
+-I was able to display the name of the moon phase when a checkbox was clicked, thanks to the "has" selector.
+
+Overall, attending the filter workshop proved to be a critical factor in the success of my project, and I am extremely grateful for the opportunity to have participated.
  
  <img width="200" alt="image" src="https://user-images.githubusercontent.com/90154152/224180257-9a95f015-29ef-4d67-8c5c-32e092348059.png">
  
@@ -97,8 +96,7 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
  
 -  Making of the stars 
 
- I really had difficulties in making  the stars. I tried so many methods. I started by using the figure tag in html to make the stars but i realised ure with the figure tag i couldn't style it without having a text in the figure element. I spent so much time trying to figure out why it wasn't working .
- 
+In my application, I intended to implement a zoom-in functionality for the moon when checkboxes were selected. However, I encountered an issue where I had mistakenly used checkboxes instead of radio buttons. As you may already know, checkboxes are primarily utilized for selecting multiple elements simultaneously, whereas radio buttons are intended for selecting a single option from two or more elements. Given that I required users to select only one option for the moon, it was necessary to alter my approach to ensure logical consistency in my application.
 
  
  <img width="441" alt="image" src="https://user-images.githubusercontent.com/90154152/224181403-538d4fa7-a90d-4fe6-bd81-65a0bfc023ea.png">
@@ -108,8 +106,7 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
  
  - Changed the figure tag to list items 
  
- I changeD the figure element to list items and realised it started working perfectly as i wanted it to. I made a list of items in the ul and styled it individually using the nth-of-type selector. But i realised it was so difficult to style each item because i had over 100 stars i neeed to style. 
- 
+Upon reflection, I determined that modifying the figure element to list items proved to be a more effective solution as it allowed my application to function precisely as intended. Specifically, I created a list of items within the unordered list (ul) and styled each item individually using the nth-of-type selector. However, as I progressed with this approach, I encountered a significant challenge in that styling each item was increasingly difficult, given that my application consisted of over 100 stars that required individual styling.
  
  - Progress Interview 
  
@@ -152,6 +149,16 @@ For my application i wanted to zoom in the moon when the checkboxes are being cl
 - Wanted to do more with the backgroud. I was very indecisive whether to make it all black. 
 
  ***
+ 
+ ### Reflection 
+ 
+ I thoroughly enjoyed working on this project. Throughout the project, I gained a deep understanding of the different CSS selectors and how to use them effectively. The various workshops that were conducted during the project were incredibly helpful in expanding my knowledge and refining my skills.
+
+I was delighted to implement what I learned during the workshops in my project. Initially, I found it challenging to create the stars that I envisioned. However, after attending the Random workshop, I was able to bring the stars to life. I applied the same technique to build the Web app from scratch, and it worked wonders.
+
+Learning about the different types of gradients also proved to be useful. I used this knowledge to create the moon phases, and although it took some time to get the gradients just right, I was ecstatic with the results. Additionally, I discovered that using Codepen to experiment with code was incredibly beneficial before building my project in VSCode.
+
+Overall, I feel that I have learned a great deal in these few weeks. If I had more time, I would have made some modifications to my project and added more functionalities to it. Nevertheless, I am proud of my work, even though it may not be groundbreaking, it still represents my best efforts. 
 
 ### Resources 
 
