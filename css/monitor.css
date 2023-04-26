@@ -1,0 +1,40 @@
+article article:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: -1000px;
+
+}
+
+
+article article:nth-of-type(2) div:nth-of-type(1) {
+
+    width: 1em;
+    height: 2em;
+    background-color: rgb(77, 70, 70);
+    transform-style: preserve-3d;
+
+
+}
+
+article article:nth-of-type(2) div:nth-of-type(2) {
+    position: absolute;
+    width: 5em;
+    height: 2em;
+    background-color: rgb(77, 70, 70);
+    border-radius: 200px 200px 0px 0px;
+    transform: translateY(-7em) translateZ(-200px)
+}
+
+article article:nth-of-type(2) div:nth-of-type(3)  {
+    position: absolute;
+    left: 32.7em;
+    width: 15em;
+    height: 10em;
+    border: none;
+    background-color: black;
+    transform: translateY(-20em);
+    box-shadow: inset 0 0 0 5px  rgb(77, 70, 70) ,
+    inset 0 0 0 10px  rgb(77, 70, 70);
+
+}
