@@ -1,0 +1,59 @@
+<style>
+    /***Cabinet 1 **/
+article article div:nth-of-type(3) {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25.6em;
+    right: 12em;
+    border: 1px solid white;
+    width: 180px;
+    height: 40px;
+    background-color: var(--table-background-color);
+    box-shadow: inset 2px x3p 5px black;
+    overflow: hidden; /* Add this property to hide the figure initially */
+}
+
+article article div:nth-of-type(3) > figure {
+    position: absolute;
+    background-color: black;
+    width: 2em;
+    border-radius: 1em;
+    height: 1em;
+    transform: rotate(0deg); /* Add initial rotation */
+    transition: transform 0.5s ease; /* Add transition for smooth animation */
+}
+
+/***Cabinet 2 **/
+article article div:nth-of-type(4) {
+    /* Existing styles */
+}
+
+article article div:nth-of-type(4) > figure {
+    /* Existing styles */
+}
+
+/***Cabinet 3 **/
+article article div:nth-of-type(5) {
+    /* Existing styles */
+}
+
+article article div:nth-of-type(5) > figure {
+    /* Existing styles */
+}
+
+/*** Figures ***/
+article article div > figure {
+    /* Existing styles */
+}
+
+/*** Radio Button Styles ***/
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+input[type="radio"]:checked ~ div > figure {
+    transform: rotate(45deg); /* Apply rotation when the radio button is checked */
+}
+
+</style>

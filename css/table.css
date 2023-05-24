@@ -1,47 +1,41 @@
-
-
-
-
-
 /**Table **/
 
-h1{
-     text-align: center;
+h1 {
+    text-align: center;
 }
 
 article:nth-of-type(1) {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 /**Surface**/
 
 article article div:nth-of-type(1) {
     position: absolute;
-    top:15em;
-    height:110px;
+    top: 15em;
+    height: 110px;
     width: 550px;
     background: var(--table-background-color);
     transform-style: preserve-3d;
-    transform: perspective(100px) rotateX(20deg) translateZ(25px) translateY(5px);
+     transform: perspective(100px) translateZ(25px) translateY(5px)  rotateX(20deg)  ;
 
 }
+
+
 /*edge**/
 
 article article div:nth-of-type(2) {
     position: absolute;
-    top:23.8em;
-    background-color:var(--edge-color);
+    top: 23.8em;
+    background-color: var(--edge-color);
     height: 30px;
-    width: 987px; 
+    width: 987px;
 }
 
 /***Cabinet 1 **/
 article article div:nth-of-type(3) {
-    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -52,21 +46,23 @@ article article div:nth-of-type(3) {
     height: 40px;
     background-color: var(--table-background-color);
     box-shadow: inset 2px x3p 5px black;
+    overflow: hidden;
 
-}
+} */
 
-article article div:nth-of-type(3)  > figure {
+ article article div:nth-of-type(3)>figure {
     position: absolute;
-    background-color: black;
+    background-color: red;
     width: 2em;
     border-radius: 1em;
-    height:1em;
+    height: 1em;
+    transform: rotate(0deg);
 
-}
+} 
 
 
 /***Cabinet 2 **/
-article article div:nth-of-type(4) {
+ article article div:nth-of-type(4) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,19 +74,22 @@ article article div:nth-of-type(4) {
     height: 40px;
     background-color: var(--table-background-color);
 
-}
 
-article article div:nth-of-type(4)  > figure {
+} 
+
+article article div:nth-of-type(4)>figure {
     position: absolute;
     background-color: black;
     width: 2em;
     border-radius: 1em;
-    height:1em;
+    height: 1em;
+    transform: rotate(0deg);
+   
 
-}
+} 
 
 /***Cabinet 3 **/
-article article div:nth-of-type(5) {
+ article article div:nth-of-type(5) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,27 +101,29 @@ article article div:nth-of-type(5) {
     height: 40px;
     background-color: var(--table-background-color);
 
-}
+} 
 
-article article div:nth-of-type(5)  > figure {
+ article article div:nth-of-type(5)>figure {
     position: absolute;
     background-color: black;
     width: 2em;
     border-radius: 1em;
-    height:1em;
+    height: 1em;
+    transform: rotate(0deg);
 
-}
+} 
 
 
 /***left leg en right **/
-article article div:nth-of-type(6), div:nth-of-type(7){
+article article div:nth-of-type(6),
+div:nth-of-type(7) {
     position: absolute;
     top: 24.8em;
     width: 2em;
     height: 10em;
     background-color: var(--edge-color);
 
-}
+} 
 
 
 /***left leg **/
@@ -130,6 +131,8 @@ article article div:nth-of-type(6) {
     left: 10em;
 }
 
-article article div:nth-of-type(7)  {
-    right:10em ;
-}
+article article div:nth-of-type(7) {
+    right: 10em; 
+} 
+
+
